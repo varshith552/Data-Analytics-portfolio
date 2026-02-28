@@ -1,5 +1,3 @@
-# Data-Analytics-portfolio
-
 # Data Analytics Portfolio
 
 This repository showcases my end-to-end data analytics projects focused on SQL, business insights, segmentation, and engagement strategy.
