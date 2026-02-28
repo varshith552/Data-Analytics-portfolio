@@ -22,6 +22,9 @@ Key engagement metrics were developed, including engagement per post, total inte
 
 🏗 Architecture Overview 
 
+## 🏗 Architecture Overview
+
+```
 ┌──────────────────────────────────────────────┐
 │                DATA SOURCE                   │
 │  Users | Photos | Likes | Comments | Tags    │
@@ -48,7 +51,7 @@ Key engagement metrics were developed, including engagement per post, total inte
                       ▼
 ┌──────────────────────────────────────────────┐
 │            ANALYTICAL MODULES                │
-│  - User Activity Distribution                │ 
+│  - User Activity Distribution                │
 │  - Engagement per Post Calculation           │
 │  - Hashtag Performance Analysis              │
 │  - Upload vs Engagement Correlation          │
@@ -77,8 +80,9 @@ Key engagement metrics were developed, including engagement per post, total inte
 │  - Retention Strategy                        │
 │  - Growth Strategy                           │
 │  - Influencer Campaign Planning              │
-│  - KPI Framework                             │ 
+│  - KPI Framework                             │
 └──────────────────────────────────────────────┘
+
 
 
 🚀 Future Improvements
