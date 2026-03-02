@@ -1,149 +1,214 @@
-# AstroSage Call Center Performance Analysis
+# 📊 Astrosage Call Centre Performance Analysis
 
-## 📌**Problem Statement**
+## 🚀 Project Overview
 
-AstroSage received a ₹1 crore investment to improve its call center operations.
-The objective was to analyze historical consultation data to identify operational inefficiencies, customer satisfaction gaps, and profitability constraints.
+Astrosage received a ₹1 crore investment to improve its call centre operations.
 
-The focus areas:
+This project analyzes historical consultation data (Calls & Chats) to identify operational bottlenecks, performance gaps, customer satisfaction issues, and revenue patterns. Based on the analysis, data-driven recommendations were developed to optimize efficiency, improve service quality, and increase profitability.
 
-🔹Improve operational efficiency
+---
 
-🔹Enhance customer satisfaction
+## 🎯 Business Objective
 
-🔹Increase profitability
+To determine how the ₹1 crore investment should be strategically allocated across:
 
-🔹Optimize staffing, training, and technology
+- Hiring additional agents  
+- Training programs  
+- Technology upgrades  
+- Customer experience improvements  
+- Revenue growth strategies  
 
-## 📂 **Dataset**
+---
 
-The dataset contains 28,027 consultation interaction records, including:
+## 📁 Dataset Overview
 
-🔹Call consultations
+- *Total Records:* 28,027 consultation interactions  
+- *Raw Attributes:* 35  
+- *Final Attributes After Cleaning:* 32  
+- *Active Days Analysed:* 34  
 
-🔹Chat consultations
+### Data Includes:
 
-🔹 User ratings
+- Call & Chat consultations  
+- Agent (Guru) details  
+- Customer ratings  
+- Revenue & earnings  
+- Platform usage (App, Dashboard, GuruCool)  
+- Timestamps (Date, Month, Hour, Month-Year)  
 
-🔹 Revenue metrics (amount, netAmount, astrologerEarnings)
+---
 
-🔹 Agent (Guru) information
+## 🧹 Data Cleaning & Preparation
 
-🔹 Time attributes (Date, Month, Year, Hour)
+- Removed duplicate session records  
+- Standardized datetime fields  
+- Created derived time fields (Date, Month, Hour, Month-Year)  
+- Handled missing/null values  
+- Converted financial & duration columns to numeric format  
+- Standardized categorical labels  
+- Prepared pivot-ready analytical dataset  
 
-After cleaning, 32 attributes were retained for analysis.
+---
 
-## 🛠 Approach
+## 📊 Key Insights & Analysis
 
-### Data Cleaning
+### 📞 Call Volume Analysis
 
-🔹Removed duplicates using _id
+- *Total Calls:* 8,508  
+- *Average Daily Calls:* ~250  
+- *Peak Day:* 430 calls  
+- *Peak Hours:* 6 AM – 5 PM  
 
-🔹Standardized date-time formats
+---
 
-🔹Converted financial & duration columns to numeric
+### ⚠️ Call Completion Performance
 
-🔹Handled missing categorical values
+- *Completed Calls:* 3,450  
+- *Completion Rate:* 40.55%  
+- *Unsuccessful Calls:* 59.45%  
+  - Busy  
+  - Failed  
+  - No-Answer  
+  - Incomplete  
 
-🔹Created derived time fields (Date, Month, Hour, Month-Year)
+➡ Major system reliability gap identified.
 
-### Exploratory Data Analysis (EDA)
+---
 
-🔹Pivot Tables for aggregation
+### ⭐ Customer Satisfaction Analysis
 
-🔹COUNT, SUM, AVERAGE, CORREL functions
+- *Overall Average Rating:* 2.93  
+- *Call Rating:* 3.50  
+- *Chat Rating:* 2.69  
+- *Complimentary Consultation Rating:* 4.5  
 
-🔹Daily & hourly trend analysis
+➡ Service quality improvement required.
 
-🔹Revenue segmentation
+---
 
-🔹Agent workload benchmarking
+### 👨‍💼 Agent Workload Analysis
 
-### Visualization & Dashboard
+- *Total Gurus (Agents):* 128  
+- *Average Calls per Guru:* 66  
 
-🔹Interactive Excel Dashboard
+#### Key Findings:
 
-🔹Slicers (Consultation Type, Year, Platform)
+- Small group of agents handle extremely high volumes  
+- Large number of agents are underutilized  
+- Significant workload imbalance  
+- Burnout risk detected  
 
-🔹Bar charts, column charts, distribution visuals
+---
 
-## 📊 EDA Insights
-### 1. Call Completion Crisis
+### 💰 Revenue Contribution
 
-🔹Total Calls: 8,508
+- *Total Revenue:* ₹2,13,987  
+- *Call Contribution:* 78.7%  
+- *Chat Contribution:* 21.3%  
 
-🔹Completed Calls: 3,450
+Strong positive correlation (≈ 0.99) between:
 
-🔹Completion Rate: 40.55%
+- Agent earnings  
+- Company revenue  
 
-🔹Failed/Unsuccessful Calls: 59.45%
+➡ Call optimization directly impacts profitability.
 
-🔹More than half of the calls are unsuccessful, indicating major operational inefficiency.
+---
 
-### 2. Revenue Dependency on Calls
+## 📈 Dashboard Features
 
-🔹Total Revenue: ₹2,13,987.32
+The interactive dashboard includes:
 
-🔹Calls contribute 78.7% of revenue
+- KPI Summary (Revenue, Calls, Chats, Ratings, Agents)  
+- Hourly Call Distribution  
+- Day-wise Call Trends  
+- Call & Chat Status Distribution  
+- Platform-wise Performance  
+- Top 10 Gurus by Calls  
+- Rating Distribution  
+- Revenue by Consultation Type  
+- Interactive Filters (Consultation Type, Year, Website)  
 
-🔹Chat contributes 21.3%
+---
 
-🔹Call performance directly drives business profitability.
+## 💡 Strategic Recommendations
 
-### 3. Customer Satisfaction Gap
+### 1️⃣ Technology Upgrade (Priority)
 
-🔹Overall Average Rating: 2.93
+- Improve call routing & load balancing  
+- Reduce busy and failed calls  
+- Implement AI-based smart routing  
+- Introduce chatbot for handling basic queries  
 
-🔹Call Rating: 3.50
+---
 
-🔹Chat Rating: 2.69
+### 2️⃣ Workforce Optimization
 
-🔹Complimentary Rating: 4.50
+- Selective hiring during peak periods  
+- Shift-based scheduling  
+- Load-balanced call distribution  
 
-🔹Service quality inconsistency impacts customer experience.
+---
 
-### 4️. Workload Imbalance
+### 3️⃣ Training & Quality Improvement
 
-🔹Total Gurus: 128
+- Communication & consultation effectiveness training  
+- Performance monitoring system  
+- Targeted coaching for low-rated gurus  
 
-🔹Average Calls per Guru: 66
+---
 
-🔹Small group handles majority of calls
+### 4️⃣ Platform Optimization
 
-🔹Uneven distribution increases burnout risk and service inconsistency.
+- Improve GuruCool platform performance  
+- Reduce technical friction  
+- Enhance overall user experience  
 
-### 5️. Peak Demand Pressure
+---
 
-🔹Peak Hour: 8 AM (660 calls)
+## 💰 ₹1 Crore Investment Allocation Strategy
 
-🔹Peak Day: 10 December (430 calls)
+| Investment Area | Allocation |
+|-----------------|------------|
+| Technology & Infrastructure | 30% |
+| Workforce Expansion | 25% |
+| Training & Quality Programs | 20% |
+| Customer Experience Optimization | 15% |
+| Revenue Growth & Marketing | 10% |
 
-🔹Staffing not aligned with demand spikes.
+---
 
-## 📈 Performance Metrics & KPI Framework
+## 🛠 Tools & Techniques Used
 
-🔹Key metrics developed:
+- Microsoft Excel  
+- Pivot Tables  
+- Aggregation Functions (COUNT, AVERAGE, CORREL)  
+- Data Cleaning Techniques  
+- Trend & Correlation Analysis  
+- Interactive Dashboard Design  
 
-🔹Call Completion Rate
+---
 
-🔹Revenue by Consultation Type
+## 🏁 Conclusion
 
-🔹Average Rating by Platform
+The analysis revealed critical operational challenges including:
 
-🔹Agent Workload Distribution
+- Low call completion rate  
+- Workload imbalance among agents  
+- Moderate customer satisfaction  
+- Peak-hour system pressure  
 
-🔹Hourly & Daily Demand Patterns
+By strategically allocating the ₹1 crore investment based on data insights, Astrosage can significantly improve:
 
-Correlation between astrologer earnings and company revenue: 0.9999
+- Operational efficiency  
+- Customer satisfaction  
+- Agent productivity  
+- Revenue growth  
+- Long-term scalability  
 
-## 🚀 Strategic Recommendations
+---
 
-🔹 Upgrade call routing & infrastructure
+## 👤 Author
 
-🔹 Optimize workforce allocation
-
-🔹 Implement targeted training programs
-
-🔹 Improve low-rated platforms
-
-🔹 Introduce demand forecasting
+*A. Varshith*  
+AstroSage Call Centre Performance Analysis
