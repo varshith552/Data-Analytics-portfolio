@@ -37,7 +37,7 @@ Developed a SQL-based analytical framework to support segmentation-driven market
 Developed an interactive Excel dashboard and proposed a ₹1 crore investment allocation strategy based on operational insights.
 
 
-## 3. Power BI – Bank CRM Customer Churn Analysis
+## 3. Power BI – Bank CRM Analytics Dashboard
 
 Developed an end-to-end churn analysis solution using Excel, SQL, and Power BI to identify key drivers of customer churn.
 
